@@ -151,7 +151,7 @@ X_train, y_train, X_val, y_val, X_test, y_test = data_process()
 cnn = CNN_model()
 
 # Train the model
-#history = cnn.fit(X_train, y_train, epochs=1, batch_size=128, validation_data=(X_val, y_val), shuffle=True)
+history = cnn.fit(X_train, y_train, epochs=100, batch_size=128, validation_data=(X_val, y_val), shuffle=True)
 
 # Save the model and model's training history
 #cnn.save('A/CNN_Model_A.h5')
